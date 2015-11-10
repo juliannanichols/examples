@@ -1,3 +1,6 @@
+/*
+ * Finish implementation 
+ */
 
 import java.util.Scanner;
 
@@ -32,7 +35,20 @@ public class Ex6_2 {
         
         public void setLastName( String n ) {
             
-            if( !n.matches("^[A-Za-z]+$") ) {
+        	/*
+        	 * Regular expression
+        	 * ^- beginning of line
+        	 * []- characters it will accept (A-Z , a-z)
+        	 * +- accept any number of these characters
+        	 * $- end of line
+        	 * 
+        	 * input validation?
+        	 * last name..accept apostrophes and dashes
+        	 * 
+        	 * phone numbers: "^[0-9]{3}-[0-9]{3}-[0-9]{4}$"
+        	 */
+        	
+            if( !n.matches("^[A-Za-z]+$") ) { 
                 System.out.println( "Invalid characters in last name" );
             } else {
                 lName = n;
