@@ -106,11 +106,6 @@ public class Ex11_1 {
             JButton eventSource = (JButton)e.getSource();
             if( eventSource.getText().equals("Update Label") ) {
                 myLabel.setText( myTextField.getText() );
-            } else {
-                myLabel.setForeground( theColors[++index] );
-                if (index >= theColors.length - 1) {
-                    index = -1;
-                }
             }
         }
     }
