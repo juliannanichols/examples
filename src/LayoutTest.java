@@ -49,7 +49,7 @@ public class LayoutTest extends JFrame implements ActionListener {
 
 		outputLabel = new JLabel();
 		outputLabel.setPreferredSize(new Dimension(150, 15));
-		mainPanel.add( outputLabel ); 
+		mainPanel.add( outputLabel );
 		
 		add(mainPanel, BorderLayout.CENTER);
 		
